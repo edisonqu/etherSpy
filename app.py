@@ -5,7 +5,6 @@ from etherscan import etherscan_txs
 
 app = Flask(__name__)
 
-
 @app.route('/')
 def index():  # put application's code here
     return render_template('index.html')
@@ -17,7 +16,7 @@ def send_request():
     #disabling it for the demo
     phone_number = request.json["phone_number"]
 
-    return etherscan_txs(address)
+    return etherscan_txs(address, phone_number)
 
 @app.route('/spy')
 def spy():  # put application's code here

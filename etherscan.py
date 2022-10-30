@@ -6,7 +6,7 @@ import os
 
 load_dotenv()
 
-def etherscan_txs(address):
+def etherscan_txs(address, phone):
     etherscan_api = os.getenv("etherscan_api")
     # address = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
     start_block = 0
@@ -45,7 +45,7 @@ def etherscan_txs(address):
             else:
                 message = f"ALERT: User: {txs_from} transacted {txs_value} to User: {txs_to} on {time}. See more information on https://etherscan.io/tx/{hash}."
 
-            send_message(message)
+            send_message(message, phone)
 
         old_blockNumber =  blockNumber
         counter+=counter+1
