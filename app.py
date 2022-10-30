@@ -13,8 +13,10 @@ def index():  # put application's code here
 @app.route('/sendMessage', methods = ["POST"])
 def send_request():
     address = request.json["blockchain"]
-    phone_number = request.json["phone"]
-    etherscan_txs(address)
+    print(request.json)
+    phone_number = request.json["phone_number"]
+
+    return etherscan_txs(address)
 
 @app.route('/spy')
 def spy():  # put application's code here
