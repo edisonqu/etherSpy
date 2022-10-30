@@ -17,8 +17,8 @@ def etherscan_txs(address):
     # Starting the unique search for Blocks
     blockNumber = ''
     old_blockNumber = ''
-
-    while True:
+    counter = 0
+    while counter < 100:
         response = requests.get(f"https://api.etherscan.io/api?module=account&action=txlist&address={address}&startblock={start_block}&endblock={end_block}&page=1&offset={offset}&sort={sort}&"
                                 f"apikey={etherscan_api}")
         # result = response["result"]
@@ -48,6 +48,7 @@ def etherscan_txs(address):
             send_message(message)
 
         old_blockNumber =  blockNumber
+        counter+=counter+1
 
     return "finished"
 

@@ -14,6 +14,7 @@ def index():  # put application's code here
 def send_request():
     address = request.json["blockchain"]
     print(request.json)
+    #disabling it for the demo
     phone_number = request.json["phone_number"]
 
     return etherscan_txs(address)
