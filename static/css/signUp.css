@@ -9,7 +9,7 @@
 
 body {
     min-height: 100%;
-    background-color: #697386;
+    background-color: #21325B;
 }
 
 h1 {
@@ -17,7 +17,7 @@ h1 {
 }
 
 a {
-    color: #d51313;
+    color: #21325B;
     text-decoration: unset;
 }
 
@@ -175,11 +175,11 @@ label {
 }
 
 input[type="submit"] {
-    background-color: rgb(212, 84, 84);
+    background-color: rgb(5, 36, 115);
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
     rgba(0, 0, 0, 0) 0px 0px 0px 0px,
     rgba(0, 0, 0, 0.12) 0px 1px 1px 0px,
-    rgb(229, 165, 165) 0px 0px 0px 1px,
+    rgb(7, 44, 229) 0px 0px 0px 1px,
     rgba(0, 0, 0, 0) 0px 0px 0px 0px,
     rgba(0, 0, 0, 0) 0px 0px 0px 0px,
     rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;

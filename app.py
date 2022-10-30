@@ -22,5 +22,9 @@ def send_request():
 def spy():  # put application's code here
     return render_template('spy.html')
 
+
+@app.route('/thankyou')
+def thankyou():
+    return render_template('thankyou.html')
 if __name__ == '__main__':
     app.run(debug=True)

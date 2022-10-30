@@ -1,6 +1,6 @@
 function takeValue(event) {
     event.preventDefault()
-    window.location.href="http://programminghead.com";
+    window.location.href="http://127.0.0.1:5000/thankyou";
 
 
     var blockchainAddress = document.getElementById("blockchain").value
