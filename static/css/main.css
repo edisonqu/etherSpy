@@ -1,0 +1,172 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,body {
+    margin:0;
+    padding:0;
+    background-color: #1f2937;
+}
+
+.header {
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: #1f2937;
+    color: white;
+}
+
+.nav-bar,
+.header-content {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 200px;
+}
+
+ul {
+    list-style-type: none;
+    display: inline-flex;
+    gap: 30px;
+}
+
+a:link,
+a:visited,
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.header-content {
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+
+.main-left {
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+button {
+    background-color: #35469f;
+    color: white;
+    font: medium;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    width: 150px;
+}
+
+.believe {
+    max-width: 400px;
+    flex-shrink: 1;
+}
+
+.block-one {
+    background-color: white;
+    color: black;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+
+.soccer-balls {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.soccer-ball-pic {
+    max-width: 100px;
+}
+
+.ball-text {
+    max-width: 100px;
+    color: black;
+}
+
+.ball-text:hover {
+    color: #35469f;
+    text-decoration: underline;
+}
+
+.block-two {
+    background-color: #e5e7eb;
+    color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-size: 36px;
+    font-style: italic;
+}
+
+.quote-source {
+    text-align: end;
+    font-style: normal;
+}
+
+.block-three {
+    background-color: white;
+    color: black;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #35469f;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-bottom: 20px;
+    padding-right: 100px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: white;
+    box-shadow: 5px 5px rgb(31, 31, 31);
+}
+
+.modal-header {
+    font-size: 30px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.modal-text {
+    font-size: 20px;
+}
+
+.modal-button {
+    border: white 2px solid;
+    align-self: flex-end;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #f0cb5d;
+    /* why doesn't the text color change to black for the modal button? */
+    color: black;
+    cursor: pointer;
+}
+
+
+.footer {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
