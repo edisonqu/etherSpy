@@ -8,7 +8,7 @@ function takeValue(event) {
     console.log(blockchainAddress)
     console.log(phoneNumber)
 
-    fetch('http://127.0.0.1:5000/sendMessage',{method: 'POST',
+    fetch('/sendMessage',{method: 'POST',
         headers: {
         'Content-Type': 'application/json',
       },
