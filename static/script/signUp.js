@@ -1,6 +1,5 @@
 function takeValue(event) {
     event.preventDefault()
-    window.location.href="/thankyou";
 
 
     var blockchainAddress = document.getElementById("blockchain").value
@@ -21,6 +20,9 @@ function takeValue(event) {
         .then((data )=>{
             data.text().then((data) => {
                 dataInfo = data
+                if(data === "finished"){
+                        window.location.href="/thankyou";
+                }
             console.log(data);
             })
 })
